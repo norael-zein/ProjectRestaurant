@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head> 
+        <title>Boka - Husmans Värdshus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        <link href="../assets/stylesheets/reset.css" rel="stylesheet">
+        <link href="../assets/stylesheets/main.css" rel="stylesheet">
+        <link href="../images/logo.ico" rel="icon">
+        <meta name="description" content="Möjlighet att boka bord hos Husmans värdshus - Ett formulär med namn, email, telefonnummer och eventuellt meddelande som kan skickas till restaurangen för att boka bord.">
+    </head>
+
+    <body>
+    <div id="wrapper"> <!--Wrapper-->
+
+        <header>
+            <a href="../index.html"><img class="logo" src="../images/logo.ico" alt="logo"></a>            
+            <h1>BOKA BORD HOS OSS</h1>
+        </header>
+
+        <nav> <!--navigation-->
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="meny.html">Menyer</a></li>
+                <li><a href="konfest.html">Fest & Konferens</a></li>
+                <li><a href="omoss.html">Historia & Vision</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main> <!--main-->
+            
+            <section>
+
+                <h2>Välkommna att boka bord hos oss</h2>
+
+                <p>Ta gärna en titt på vår <a href="meny.html">meny</a></p>
+
+                <form method="post"> 
+                    <fieldset> <!--Formulär med radiobuttons enligt specifikation-->
+                        <h3>Gör en bokningsförfrågan</h3>
+                        <p>
+                            <label for="antal-personer">Välj antal personer*:</label>
+                            <select id="antal-personer" name="antal-personer">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                        </p>
+
+                        <p>                        
+                            <label for="Datum">Önskat datum:*</label>
+                            <input type="date" name="bokningsdatum" id="Datum" required>
+                        </p>
+
+                        <p>
+                            <label for="Namn">Namn*:</label>
+                            <input type="text" name="namn" id="Namn" placeholder="Förnamn Efternamn" required>
+                        </p>
+        
+                        <p>
+                            <label for="Email">Email*:</label>
+                            <input type="email" name="email" id="Email" placeholder="exempel@gmail.com" pattern="\w+@\w+.+\w" required>
+                        </p>
+        
+                        <p>
+                            <label for="MobilNummer">Mobilnummer*:</label>
+                            <input type="tel" name="mobilnummer" id="MobilNummer" placeholder="073-1234567" pattern="[0-9]{3}-[0-9]{7}" required>
+                        </p>
+
+                        <p> <!--Textarea enligt specifikation-->
+                            <label for="Meddelande">Meddelande:</label>
+                            <textarea name="meddelande" rows="5" cols="30" id="Meddelande"></textarea>
+                        </p> 
+
+                        <p> <!--Knapp för att boka-->
+                            <input type="submit" value="Boka">
+                        </p>
+
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+
+            <address>
+                <p class="heading">Adress</p>
+                <p>Stockholmsvägen 23,<br> 123 45 Stockholm.</p>
+            </address>
+            <address>
+                <p class="heading">Telefon</p>
+                <p>+46123456789</p>
+            </address>
+            <address>
+                <p class="heading">Email</p>
+                <p>husmans.vardshus@gmail.com</p>
+            </address>
+
+          </footer>
+    </div> <!--end wrapper-->
+    </body>
+</html>

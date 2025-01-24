@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        <link href="../assets/stylesheets/reset.css" rel="stylesheet">
+        <link href="../assets/stylesheets/main.css" rel="stylesheet">
+        <title>Fest-och konferens - Husmans Värdshus</title>
+        <link href="../images/logo.ico" rel="icon">
+        <meta name="description" content="Information om konferens och fest på Husmans värdshus - Här beskrivs generell information om konferenslunch eller mat för fest. Det går även att direkt skicka en bokningsförfrågan via våra formulär.">
+    </head>
+
+    <body>
+    <div id="wrapper"> <!--Wrapper-->
+
+        <header>
+            <a href="../index.html"><img class="logo" src="../images/logo.ico" alt="logo"></a>            
+            <h1>FEST OCH KOFERENS</h1>
+        </header>
+
+        <nav> <!--navigation-->
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="meny.html">Menyer</a></li>
+                <li class="active"><a href="konfest.html">Fest & Konferens</a></li>
+                <li><a href="omoss.html">Historia & Vision</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main> <!--main-->
+            <h2>Boka konferens eller fest</h2>
+
+            <section>
+                <p>Letar du efter den perfekta platsen för din nästa konferens eller fest? Hos Husmans Värdshus erbjuder vi flexibla lösningar för både stora och små sällskap. Vår hemtrevliga och lyxiga miljö skapar den perfekta stämningen för alla typer av evenemang. Kontakta oss för att skräddarsy ditt arrangemang och göra det till en minnesvärd upplevelse.</p>
+            
+
+                <picture>
+                    <source srcset="../images/dukning_fest_konferens_1000.jpg" media="(min-width:1000px)">
+                    <source srcset="../images/dukning_fest_konferens_800.jpg" media="(min-width:500px)">
+                    <source srcset="../images/dukning_fest_konferens_650.jpg" media="(min-width:300px)">
+                      
+                    <!--Fallback bild med alternativtext och specificerad bredd. Används om bilderna innan inte kan laddas-->
+                    <img src="../images/dukning_fest_konferens.jpg" alt="Dukning för fest och konferens" width="195">
+                </picture>
+
+            <h3>KONFERENS</h3>
+            <p>Ge dina konferensdeltagare en välförtjänt paus med våra utsökta konferensluncher. Vi erbjuder en meny fylld med näringsrika och smakfulla rätter som håller energinivån uppe hela dagen. Våra luncher är anpassade för att passa alla dietkrav och preferenser, så att alla kan njuta av en god måltid.</p>
+            <picture>
+                <source srcset="../images/uppdukning_konferens_1000.jpg" media="(min-width:1000px)">
+                <source srcset="../images/uppdukning_konferens_800.jpg" media="(min-width:500px)">
+                <source srcset="../images/uppdukning_konferens_650.jpg" media="(min-width:300px)">
+                  
+                <!--Fallback bild med alternativtext och specificerad bredd. Används om bilderna innan inte kan laddas-->
+                <img src="../images/uppdukning_konferens.jpg" alt="Uppdukning för konferens" width="600">
+            </picture>
+            <h4>Fyll i dina uppgifter så hör vi av oss</h4>
+            <form method="post"> 
+                <fieldset> <!--Formulär med radiobuttons enligt specifikation-->
+
+                    <p>
+                        <label for="KonferensNamn">Namn*:</label>
+                        <input type="text" name="namn" id="KonferensNamn" placeholder="Förnamn Efternamn" required>
+                    </p>
+    
+                    <p>
+                        <label for="KonferensEmail">Email*:</label>
+                        <input type="email" name="email" id="KonferensEmail" placeholder="exempel@gmail.com" pattern="\w+@\w+.+\w" required>
+                    </p>
+    
+                    <p>
+                        <label for="KonferensMobilNummer">Mobilnummer*:</label>
+                        <input type="tel" name="mobilnummer" id="KonferensMobilNummer" placeholder="073-1234567" pattern="[0-9]{3}-[0-9]{7}" required>
+                    </p>
+
+                    <p> <!--Textarea enligt specifikation-->
+                        <label for="KonferensMeddelande">Meddelande:</label>
+                        <textarea name="meddelande" rows="5" cols="30" id="KonferensMeddelande"></textarea>
+                    </p> 
+
+                    <p> <!--Knapp för att boka-->
+                        <input type="submit" value="Skicka">
+                    </p>
+                </fieldset>
+            </form>
+
+            <h3>FESTVÅNING</h3>
+            <p>Fira livets stora ögonblick hos oss på Husmans Värdshus. Vår vackra och inbjudande miljö är den perfekta platsen för både fest och bröllop. Låt oss ta hand om alla detaljer, från menyn till dekorationerna, så att du kan fokusera på att njuta av din speciella dag. Våra kockar skapar minnesvärda måltider som dina gäster kommer att prata om länge.</p>
+            <picture>
+                <source srcset="../images/uppdukning_fest_1000.jpg" media="(min-width:1000px)">
+                <source srcset="../images/uppdukning_fest_800.jpg" media="(min-width:500px)">
+                <source srcset="../images/uppdukning_fest_650.jpg" media="(min-width:300px)">
+                  
+                <!--Fallback bild med alternativtext och specificerad bredd. Används om bilderna innan inte kan laddas-->
+                <img src="../images/uppdukning_fest.jpg" alt="Uppdukning för fest med blommor" width="500">
+            </picture>
+            <h4>Fyll i dina uppgifter så hör vi av oss</h4>
+            <form method="post"> 
+                <fieldset> <!--Formulär med radiobuttons enligt specifikation-->
+                    <p>     
+                        <label for="Namn">Namn*:</label>
+                        <input type="text" name="namn" id="Namn" placeholder="Förnamn Efternamn" required>
+                    </p>
+    
+                    <p>
+                        <label for="Email">Email*:</label>
+                        <input type="email" name="email" id="Email" placeholder="exempel@gmail.com" pattern="\w+@\w+.+\w" required>
+                    </p>
+    
+                    <p>
+                        <label for="MobilNummer">Mobilnummer*:</label>
+                        <input type="tel" name="mobilnummer" id="MobilNummer" placeholder="073-1234567" pattern="[0-9]{3}-[0-9]{7}" required>
+                    </p>
+
+                    <p> <!--Textarea enligt specifikation-->
+                        <label for="Meddelande">Meddelande:</label>
+                        <textarea name="meddelande" rows="5" cols="30" id="Meddelande"></textarea>
+                    </p> 
+
+                    <p> <!--Knapp för att boka-->
+                        <input type="submit" value="Skicka">
+                    </p>
+                </fieldset>
+            </form>
+
+            </section>
+        </main>
+        <footer>
+
+            <address>
+                <p class="heading">Adress</p>
+                <p>Stockholmsvägen 23,<br> 123 45 Stockholm.</p>
+            </address>
+            <address>
+                <p class="heading">Telefon</p>
+                <p>+46123456789</p>
+            </address>
+            <address>
+                <p class="heading">Email</p>
+                <p>husmans.vardshus@gmail.com</p>
+            </address>
+
+          </footer>
+    </div> <!--end wrapper-->
+    </body>
+</html>

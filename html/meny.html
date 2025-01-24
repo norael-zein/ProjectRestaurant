@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head> 
+        <title>Meny - Husmans Värdshus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        <link href="../assets/stylesheets/reset.css" rel="stylesheet">
+        <link href="../assets/stylesheets/main.css" rel="stylesheet">
+        <link href="../images/logo.ico" rel="icon">
+        <meta name="description" content="Förklaring av Husmans Värdshus meny - vilket utbud vi har samt en lista över våra drinkar. Information om specialkost nämns även här.">
+
+        <script src="../assets/js/index.js" type="module"></script>
+    </head>
+
+    <body>
+    <div id="wrapper"> <!--Wrapper-->
+
+        <header>
+            <a href="../index.html"><img class="logo" src="../images/logo.ico" alt="logo"></a>            
+            <h1>MENYER</h1>
+        </header>
+
+        <nav> <!--navigation-->
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li class="active"><a href="meny.html">Menyer</a></li>
+                <li><a href="konfest.html">Fest & Konferens</a></li>
+                <li><a href="omoss.html">Historia & Vision</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main> <!--main-->
+
+            <section>
+
+                <p>På Husmans Värdshus är varje rätt noggrant skapad för att ge dig en smakupplevelse utöver det vanliga. Vår meny är en hyllning till den svenska husmanskosten, förädlad med en lyxig gourmettvist. Vi använder endast de bästa säsongsråvarorna, noggrant utvalda för att säkerställa högsta kvalitet och smak.
+                    Utforska våra rätter och låt dig frestas av allt från klassiska favoriter till innovativa nytolkningar. Oavsett vad du väljer, kan du vara säker på att varje tugga är tillagad med passion och omsorg.</p>
+
+                <h2>MAT FÖR ALLA</h2>
+                <p>Vi har noga utformat vår meny för att erbjuda något för varje smak och preferens. Vare sig du är köttälskare, vegetarian, eller har specifika kostbehov, hittar du något som passar just dig.</p>
+                  
+                <h3>Säsongens meny</h3>
+                
+                <table class="menu">
+                    <tr>
+                      <th>Rätt</th>
+                      <th>Pris</th>
+                    </tr>
+                    <tr>
+                        <td>Toast Skagen<br>
+                            <small>Rostat mörkt bröd toppad med krämig räkröra, citron och dill.<i>G*/L/M</i></small>
+                        </td>
+                        <td>250 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Räksallad<br>
+                            <small>Färska räkor på en bädd av grönsaker med avokado och vitlöksdressing.</small>
+                        </td>
+                        <td>120 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Kalvstek med Gräddsås och Rotfrukter<br>
+                          <small>Mör kalvsteg med rik gräddsås och ungrostad potatis, palsternacka och potatis. Toppas med färsk timjan. <i>L/M</i></small>
+                        </td>
+                        <td>350 kr</td>
+                    </tr>
+                    <tr>
+                      <td>Köttbullar med gräddsås och lingon<br>
+                        <small>Hemgjorda köttbullar på svenskt nötkött serverade med gräddsås, lingonsylt och kokt potatis.<i>L*/M</i></small>
+                      </td>
+                      <td>150 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Rökt lax med hovmästarsås<br>
+                        <small>serveras med hovmästarsås av senap, honung, ättika och dill. Toppad med rödlök.<i>M</i></small>
+                        </td>
+                        <td>120 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Stekt strömming med potatismos<br>
+                        <small>Krispigt stekt strömming serveras med ett krämigt potatismos. Toppad med citron och färsk persilja.<i>G</i></small>
+                        </td>
+                        <td>140 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Silltårta med vitlökskräm<br>
+                        <small>Inlagd sill på ett mjukt bröd med ett lager av krämig vitlökskräm. Serveras med inlagda grönsaker och ett kryddigt bröd.</small>
+                        </td>
+                        <td>160 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Rödbetsbiffar med Gräddfilssås och Kokt Potatis<br>
+                        <small>Saftiga biffar gjorda på rivna rödbetor, serveras med en krämig gräddfilssås gjord på friska örter. Till detta kokt potatis och en sallad med syrade gurkor.<i>L/M/V</i></small>
+                        </td>
+                        <td>130 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Svensk tomatsallad med vinägrett<br>
+                            <small>Fräscha tomater med jalapenjovinägrett, silverlök och frökrisp.<i>V</i></small>
+                        </td>
+                        <td>130 kr</td>
+                    </tr>
+                    <tr>
+                        <td>Svensk Sallad med Ägg och Inlagda Rödbetor<br>
+                            <small>sallad med kokta ägg, skivade inlagda rödbetor, och blandad grönsallad. Toppad med ärtor, finhackad rödlök och en krämig senapsdressing.<i>V</i></small>
+                        </td>
+                        <td>130 kr</td>
+                    </tr>
+                </table>
+
+                <h3>Drinkar</h3>
+                <input type="text" id="search" placeholder="Sök drinkar...">
+                <div id="drink-container">
+                    <table id="dryck">
+                        <!-- Drinkarna kommer att läggas till här av JavaScript -->
+                    </table>
+                </div>
+
+                <h4>SPECIALKOST</h4>
+                <p>Rätten innehåller G=gluten L=laktos M=mjölkprotein N=nötter V=vegetarisk</p>
+                <p>Med stjärna G* L* M* N* = rätten går att få utan allergenerna. Vid allergier, fråga oss!</p>
+
+            </section>
+
+        </main>
+        <footer>
+            <hr>
+
+            <address>
+                <p class="heading">Adress</p>
+                <p>Stockholmsvägen 23,<br> 123 45 Stockholm.</p>
+            </address>
+            <address>
+                <p class="heading">Telefon</p>
+                <p>+46123456789</p>
+            </address>
+            <address>
+                <p class="heading">Email</p>
+                <p>husmans.vardshus@gmail.com</p>
+            </address>
+            
+          </footer>
+    </div> <!--end wrapper-->
+    </body>
+</html>
